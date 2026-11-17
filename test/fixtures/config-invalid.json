@@ -1,0 +1,19 @@
+{
+  "schema": "ao-reason-config/1",
+  "mode": "local",
+  "role": "runner",
+  "deployment": "dsh-integration",
+  "state_dir": "state",
+  "nodes": [
+    {
+      "id": "node-1",
+      "address": "127.0.0.1:22",
+      "key_file": "node-1.key",
+      "slots": 0,
+      "templates": ["sum-native-v1"],
+      "admitted": true,
+      "healthy": true,
+      "draining": false
+    }
+  ]
+}

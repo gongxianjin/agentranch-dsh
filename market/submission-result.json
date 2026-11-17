@@ -1,0 +1,32 @@
+{
+  "status": "PUSHED_REPO_PENDING_NPM",
+  "published": false,
+  "repoPush": {
+    "date": "2026-11-17",
+    "remote": "https://github.com/gongxianjin/agentranch.git",
+    "branch": "v0.2-win",
+    "range": "4ec3aa9..3295538",
+    "remoteRefVerified": "refs/heads/v0.2-win = 32955381d1245c2fc0db95e8640f0edb7af4b2d6 (git ls-remote, independent of push output)"
+  },
+  "runtimeSmokeTest": "PASS",
+  "runtimeSmokeEvidence": {
+    "date": "2026-11-17",
+    "dshVersion": "0.2.2-rc.1",
+    "nodeVersion": "v24.14.0",
+    "install": "clean profile via dsh plugin add release/agentranch-dsh-0.1.0.tgz — success",
+    "load": "boot reaches LLM stage; 27 tools advertised including agentranch_check, agentranch_identity, agentranch_local_check, agentranch_run_once",
+    "failureVisibility": "invalid awCliPath overlay produces 'dsh: warning: 1 entry did not activate' with ENOENT detail",
+    "uninstall": "profile manifest restored; post-uninstall boot clean",
+    "modelLoopToolCall": "NOT_RUN (no DEEPSEEK_API_KEY)"
+  },
+  "releaseArtifact": {
+    "tarball": "release/agentranch-dsh-0.1.0.tgz",
+    "bytes": 11882,
+    "sha256": "1fbdbc76177619702e390e41ffd83d9d5ceee02baac5d5871358bbfa784571d7",
+    "note": "Repacked 2026-11-17 from merged tree 3295538 after release/ was found deleted; 22 files. Earlier VERIFICATION.md recorded 11861/40dc6c... from the pre-merge worktree build — differs because tar timestamps/compression are not byte-stable across pack runs; content source tree identical (commit 3295538)."
+  },
+  "blockers": [
+    "No authenticated npm account is available in this environment (npm whoami → ENEEDAUTH). npm publish requires the user to run npm login and authorize publication."
+  ],
+  "nextVerification": "After explicit user authorization: create/push the public GitHub repository, publish agentranch-dsh@0.1.0 to npm, wait for the DSH Bazaar daily scan, then verify discovery and a clean-profile install from the public source."
+}

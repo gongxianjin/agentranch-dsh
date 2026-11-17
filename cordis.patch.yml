@@ -1,0 +1,4 @@
+- insert:
+    - id: agentranch-dsh
+      name: agentranch-dsh
+      config: {}

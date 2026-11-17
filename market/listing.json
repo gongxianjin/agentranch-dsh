@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "status": "draft",
+  "package": "agentranch-dsh",
+  "version": "0.1.0",
+  "displayName": "AgentRanch DSH",
+  "description": "Bounded DSH tools for a user-configured AgentRanch aw-cli.",
+  "repository": "https://github.com/gongxianjin/agentranch-dsh",
+  "homepage": "https://github.com/gongxianjin/agentranch-dsh#readme",
+  "license": "MIT",
+  "topics": ["dsh-plugin", "agentranch", "local-cli", "security"],
+  "npm": "agentranch-dsh",
+  "engines": { "node": ">=24.9.0", "dsh": ">=0.2.2-rc.1 <0.3.0" },
+  "compatibility": { "agentranch": "0.2.0", "platform": "Windows" }
+}
